@@ -41,7 +41,7 @@ export default function Home() {
     try {
       const balances = await getBalance(address);
       console.log({balances});
-      if( balances.name !== 'ValidationError') {
+      if( balances[0] && balances[0].currency !== 'XRP') {
         setBalances(balances);
       }
     } catch(err) {
