@@ -41,7 +41,7 @@ export default function Home() {
     try {
       const balances = await getBalance(address);
       console.log({balances});
-      if( balances[0] && balances[0].currency !== 'XRP') {
+      if( balances[0] && balances[0].currency == 'XRP') {
         setBalances(balances);
       }
     } catch(err) {
@@ -89,9 +89,9 @@ export default function Home() {
 
         {message && (
           <p className={styles.resultContainer}>
-            <p className={styles.result}>
+            <span className={styles.result}>
               {message}
-            </p>
+            </span>
           </p>
         )}
 
