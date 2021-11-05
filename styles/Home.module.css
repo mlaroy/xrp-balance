@@ -38,6 +38,11 @@
   text-decoration: none;
 }
 
+.title img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
 .title a:hover,
 .title a:focus,
 .title a:active {
@@ -47,8 +52,13 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .title,
 .description {
@@ -144,4 +154,29 @@
   border: none;
   border-radius: 5px;
   background: skyblue;
+  cursor: pointer;
+}
+
+.formClear {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  text-align: center;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 5px;
+  background: red;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.resultContainer {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.result {
+  position: absolute;
+  left: 0;
+  right: 0;
 }
