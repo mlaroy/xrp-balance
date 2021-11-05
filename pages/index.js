@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -70,7 +70,7 @@ export default function Home() {
       <main className={styles.main}>
 
         <h1 className={styles.title}>
-          <img src="/xrp-xrp-logo.svg" alt="XRP Logo" />
+          <Image src="/xrp-xrp-logo.svg" alt="XRP Logo" width="100" height="100" />
           Check my XRP Balance
         </h1>
 
